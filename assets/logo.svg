@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 180" width="600" height="180">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a102b"/>
+      <stop offset="55%" stop-color="#2a1647"/>
+      <stop offset="100%" stop-color="#3d1e4a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff7b29"/>
+      <stop offset="100%" stop-color="#ffb347"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="180" rx="16" fill="url(#bg)"/>
+  <circle cx="530" cy="36" r="64" fill="#ff7b29" opacity="0.10"/>
+  <circle cx="70" cy="150" r="52" fill="#9b5de5" opacity="0.14"/>
+
+  <!-- Pipeline nodes -->
+  <g transform="translate(46, 56)">
+    <rect x="0" y="0" width="76" height="34" rx="8" fill="#ffffff" fill-opacity="0.08"/>
+    <text x="38" y="21" text-anchor="middle" fill="#e9d8fd" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="600">.iter()</text>
+
+    <path d="M82 17 L108 17" stroke="url(#accent)" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="108,12 117,17 108,22" fill="#ff9f43"/>
+
+    <rect x="122" y="0" width="94" height="34" rx="8" fill="#ffffff" fill-opacity="0.08"/>
+    <text x="169" y="21" text-anchor="middle" fill="#e9d8fd" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="600">.filter()</text>
+
+    <path d="M222 17 L248 17" stroke="url(#accent)" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="248,12 257,17 248,22" fill="#ff9f43"/>
+
+    <rect x="262" y="0" width="82" height="34" rx="8" fill="#ffffff" fill-opacity="0.08"/>
+    <text x="303" y="21" text-anchor="middle" fill="#e9d8fd" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="600">.map()</text>
+
+    <path d="M350 17 L376 17" stroke="url(#accent)" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="376,12 385,17 376,22" fill="#ff9f43"/>
+
+    <rect x="390" y="0" width="118" height="34" rx="8" fill="url(#accent)"/>
+    <text x="449" y="21" text-anchor="middle" fill="#1a102b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">.sum() / SIMD</text>
+  </g>
+
+  <text x="46" y="126" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="23" font-weight="700">Rust Iterators Deep Dive</text>
+  <text x="46" y="150" fill="#cbb6e8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13">Lazy pipelines, zero allocations &amp; LLVM auto-vectorization  •  eagle2000.space</text>
+</svg>

@@ -1,0 +1,9 @@
+[package]
+name = "rust-iterators-examples"
+version = "0.1.0"
+edition = "2021"
+description = "Runnable examples for the 'Rust Iterators Deep Dive' article on eagle2000.space"
+repository = "https://github.com/eaglebk/rust-iterators-examples"
+license = "MIT"
+
+[dependencies]
